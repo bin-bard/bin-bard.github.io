@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignments</title>
+    <!-- Custom favicon -->
+    <link rel="icon" href="./img/tai.png" sizes="any">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      body {
+        height: auto;
+      }
+
+      section.project > img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+      }
+
+      p.description {
+        padding: 16px;
+      }
+
+      ul.techs {
+        list-style: none;
+        text-align: center;
+      }
+      ul.techs::before {
+        content: "Made with: ";
+      }
+      ul.techs > li {
+        display: inline-block;
+      }
+      ul.techs > li:not(:last-child)::after {
+        content: ", ";
+      }
+
+      footer {
+        position: initial;
+      }
+
+      section#hero-banner > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+
+      /* tablet device */
+      @media (min-width: 426px) and (max-width: 768px) {
+        section#projects {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          column-gap: 2%;
+          row-gap: 16px;
+        }
+
+        section.project {
+          width: 49%;
+        }
+      }
+
+      /* laptop device */
+      @media (min-width: 769px) {
+        section#projects {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          column-gap: 2%;
+          row-gap: 16px;
+        }
+
+        section.project {
+          width: 32%;
+        }
+      }
+
+      /* large laptop device */
+      @media (min-width: 1025px) {
+        section.project {
+          width: 23.5%; /* 4 projects per row */
+        }
+      }
+
+      /* 4k device */
+      @media (min-width: 2560px) {
+        /* 5 projects per row */
+        /* add left and right space to center all of the project */
+        section.project {
+          width: 18.4%;
+        }
+
+        section#projects {
+          width: 70%;
+          margin-left: 15%;
+          margin-right: 15%;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <nav id="left-side">
+        <a class="nav-link" href="./index.html">
+          <i class="fa-solid fa-house"></i> Home
+        </a>
+        <a class="nav-link" href="./projects.html">
+          <i class="fa-solid fa-folder-tree"></i> Projects
+        </a>
+      </nav>
+      <nav id="right-side">
+        <a class="nav-link" href="https://github.com/">
+          <i class="fa-brands fa-github"></i> Github
+        </a>
+      </nav>
+    </header>
+    <section id="hero-banner">
+      <div>
+        <section>
+          <img
+            id="my-avatar"
+            src="./img/tai.png"
+            alt="This is my amazing avatar." <-Hien thi khi tai avatar that bai->
+          />
+        </section>
+
+        <section>
+          <h1 id="my-name">Nguyen Thanh Tai</h1>
+          <h2>22133049</h2>
+        </section>
+      </div>
+    </section>
+
+    <h3>Projects</h3>
+    <!-- A collection of projects -->
+    <section id="projects">
+      <section class="project">
+        <img
+          src="./projects-img/project_01.png"
+          alt="a placeholder image of a project"
+        > <!-- snapshot of the project -->
+        <a href="https://email-r08g.onrender.com" target="_blank">
+          <h3>Email</h3> <!-- project name -->
+        </a>
+        <ul class="techs"> <!-- list of web technologies used -->
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Servlet/JSP</li>
+          <li>Java</li>
+        </ul>
+      </section>
+
+      <section class="project">
+        <img
+          src="./projects-img/project_02.png"
+          alt="a placeholder image of a project"
+        > <!-- snapshot of the project -->
+        <a href="https://survey-g1yf.onrender.com" target="_blank">
+          <h3>Survey</h3> <!-- project name -->
+        </a> <!-- project name -->
+        <ul class="techs"> <!-- list of web technologies used -->
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Servlet/JSP</li>
+          <li>Java</li>
+        </ul>
+      </section>
+
+      <section class="project">
+        <img
+          src="./projects-img/project_03.png"
+          alt="a placeholder image of a project"
+        > <!-- snapshot of the project -->
+        <a href="https://erroremail.onrender.com/" target="_blank">
+          <h3>ErrorEmail</h3> <!-- project name -->
+        </a> <!-- project name -->
+        <ul class="techs"> <!-- list of web technologies used -->
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Servlet/JSP</li>
+          <li>Java</li>
+        </ul>
+      </section>
+
+      <section class="project">
+        <img
+                src="./projects-img/tuan8_connectionpool.png"
+                alt="a placeholder image of a project"
+        > <!-- snapshot of the project -->
+        <a href="https://tuan8-connectionpool.onrender.com/ConnectionPool-1.0-SNAPSHOT//" target="_blank">
+          <h3>ConnectionPool</h3> <!-- project name -->
+        </a> <!-- project name -->
+        <ul class="techs"> <!-- list of web technologies used -->
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Servlet/JSP</li>
+          <li>Java</li>
+          <li>Connection Pool</li>
+        </ul>
+      </section>
+<!--      <section class="project">-->
+<!--        <img-->
+<!--          src="./projects-img/web.png"-->
+<!--          alt="a placeholder image of a project"-->
+<!--        > &lt;!&ndash; snapshot of the project &ndash;&gt;-->
+<!--        <h3>Project 4</h3> &lt;!&ndash; project name &ndash;&gt;-->
+<!--        <ul class="techs"> &lt;!&ndash; list of web technologies used &ndash;&gt;-->
+<!--          <li>HTML</li>-->
+<!--          <li>CSS</li>-->
+<!--          <li>JavaScript</li>-->
+<!--        </ul>-->
+<!--        <p class="description"> &lt;!&ndash; short description of the project &ndash;&gt;-->
+<!--          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,-->
+<!--          modi! Ea atque ullam id, sit facilis unde placeat quasi quas-->
+<!--          voluptatum architecto amet, quis iure, assumenda voluptatibus-->
+<!--          explicabo nulla tenetur.-->
+<!--        </p>-->
+<!--      </section>-->
+
+<!--      <section class="project">-->
+<!--        <img-->
+<!--          src="./projects-img/web.png"-->
+<!--          alt="a placeholder image of a project"-->
+<!--        > &lt;!&ndash; snapshot of the project &ndash;&gt;-->
+<!--        <h3>Project 5</h3> &lt;!&ndash; project name &ndash;&gt;-->
+<!--        <ul class="techs"> &lt;!&ndash; list of web technologies used &ndash;&gt;-->
+<!--          <li>HTML</li>-->
+<!--          <li>CSS</li>-->
+<!--          <li>JavaScript</li>-->
+<!--        </ul>-->
+<!--        <p class="description"> &lt;!&ndash; short description of the project &ndash;&gt;-->
+<!--          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,-->
+<!--          modi! Ea atque ullam id, sit facilis unde placeat quasi quas-->
+<!--          voluptatum architecto amet, quis iure, assumenda voluptatibus-->
+<!--          explicabo nulla tenetur.-->
+<!--        </p>-->
+<!--      </section>-->
+
+<!--      <section class="project">-->
+<!--        <img-->
+<!--          src="./projects-img/web.png"-->
+<!--          alt="a placeholder image of a project"-->
+<!--        > &lt;!&ndash; snapshot of the project &ndash;&gt;-->
+<!--        <h3>Project 6</h3> &lt;!&ndash; project name &ndash;&gt;-->
+<!--        <ul class="techs"> &lt;!&ndash; list of web technologies used &ndash;&gt;-->
+<!--          <li>HTML</li>-->
+<!--          <li>CSS</li>-->
+<!--          <li>JavaScript</li>-->
+<!--        </ul>-->
+<!--        <p class="description"> &lt;!&ndash; short description of the project &ndash;&gt;-->
+<!--          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,-->
+<!--          modi! Ea atque ullam id, sit facilis unde placeat quasi quas-->
+<!--          voluptatum architecto amet, quis iure, assumenda voluptatibus-->
+<!--          explicabo nulla tenetur.-->
+<!--        </p>-->
+<!--      </section>-->
+
+<!--      <section class="project">-->
+<!--        <img-->
+<!--          src="./projects-img/web.png"-->
+<!--          alt="a placeholder image of a project"-->
+<!--        > &lt;!&ndash; snapshot of the project &ndash;&gt;-->
+<!--        <h3>Project 7</h3> &lt;!&ndash; project name &ndash;&gt;-->
+<!--        <ul class="techs"> &lt;!&ndash; list of web technologies used &ndash;&gt;-->
+<!--          <li>HTML</li>-->
+<!--          <li>CSS</li>-->
+<!--          <li>JavaScript</li>-->
+<!--        </ul>-->
+<!--        <p class="description"> &lt;!&ndash; short description of the project &ndash;&gt;-->
+<!--          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,-->
+<!--          modi! Ea atque ullam id, sit facilis unde placeat quasi quas-->
+<!--          voluptatum architecto amet, quis iure, assumenda voluptatibus-->
+<!--          explicabo nulla tenetur.-->
+<!--        </p>-->
+<!--      </section>-->
+
+<!--      <section class="project">-->
+<!--        <img-->
+<!--          src="./projects-img/web.png"-->
+<!--          alt="a placeholder image of a project"-->
+<!--        > &lt;!&ndash; snapshot of the project &ndash;&gt;-->
+<!--        <h3>Project 8</h3> &lt;!&ndash; project name &ndash;&gt;-->
+<!--        <ul class="techs"> &lt;!&ndash; list of web technologies used &ndash;&gt;-->
+<!--          <li>HTML</li>-->
+<!--          <li>CSS</li>-->
+<!--          <li>JavaScript</li>-->
+<!--        </ul>-->
+<!--        <p class="description"> &lt;!&ndash; short description of the project &ndash;&gt;-->
+<!--          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,-->
+<!--          modi! Ea atque ullam id, sit facilis unde placeat quasi quas-->
+<!--          voluptatum architecto amet, quis iure, assumenda voluptatibus-->
+<!--          explicabo nulla tenetur.-->
+<!--        </p>-->
+<!--      </section>-->
+
+<!--      <section class="project">-->
+<!--        <img-->
+<!--          src="./projects-img/web.png"-->
+<!--          alt="a placeholder image of a project"-->
+<!--        > &lt;!&ndash; snapshot of the project &ndash;&gt;-->
+<!--        <h3>Project 9</h3> &lt;!&ndash; project name &ndash;&gt;-->
+<!--        <ul class="techs"> &lt;!&ndash; list of web technologies used &ndash;&gt;-->
+<!--          <li>HTML</li>-->
+<!--          <li>CSS</li>-->
+<!--          <li>JavaScript</li>-->
+<!--        </ul>-->
+<!--        <p class="description"> &lt;!&ndash; short description of the project &ndash;&gt;-->
+<!--          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,-->
+<!--          modi! Ea atque ullam id, sit facilis unde placeat quasi quas-->
+<!--          voluptatum architecto amet, quis iure, assumenda voluptatibus-->
+<!--          explicabo nulla tenetur.-->
+<!--        </p>-->
+<!--      </section>-->
+
+    <!-- Footer -->
+    <footer>
+      <section>
+        <a href="https://www.facebook.com/?locale=vi_VN">
+          <i class="fa-brands fa-facebook"></i> Facebook
+        </a>
+        <a href="https://zalo.me/">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+      </section>
+    </footer>
+
+  </body>
+</html>
